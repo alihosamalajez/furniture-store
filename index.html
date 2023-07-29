@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture store</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="setting">
+        <div class="icon">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+        </div>
+        <div class="setting-container">
+            <div class="box">
+                <h4 data-i18n="color">Colors :</h4>
+                <ul class="color1">
+                    <li class="active" data-color="#2196f3"><a href=""></a></li>
+                    <li data-color="rgb(255, 145, 0)"><a href=""></a></li>
+                    <li data-color="rgb(0, 196, 163)"><a href=""></a></li>
+                    <li data-color="rgb(204, 1, 255)"><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4 data-i18n="language">Language :</h4>
+                <ul class="lang">
+                    <li class="ar ">Arabic</li>
+                    <li class="en active">English</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a data-i18n="staor" href="#" class="logo">Store</a>
+            <nav class="lin open">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul class="main">
+                    <li><a data-i18n="home" class="active" href="index.html">Home</a></li>
+                    <li><a data-i18n="cart" id="carta">cart</a></li>
+                    <li><a data-i18n="wishlist" id="wisha">wishlist</a></li>
+                    <li><a data-i18n="contact" href="./contact.html">Contact</a></li>
+                    <li><a data-i18n="about" href="./about.html">About</a></li>
+                    <li><a data-i18n="login"href="./login.html">login</a></li>
+                </ul>
+            </nav>
+            <a data-i18n="login"href="./login.html" class="log">login</a>
+        </div>
+
+
+        <!-- start cart -->
+        <div class="cart">
+            <h2 data-i18n="addCart" class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="./images/sofa2.jpg" class="cart-img" alt="">
+                    <div class="detail">
+                        <div class="product-title">Test Title</div>
+                        <div class="cart-price">$25</div>
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+            </div>
+        </div>
+        <!-- end Cart -->
+
+        <!-- start wishlist -->
+        <div class="wish">
+            <h2 data-i18n="addWishlist" class="wish-title">Your Wishlish</h2>
+            <div class="wish-content">
+                <!-- <div class="wish-box">
+                    <div>
+                        <img src="./images/sofa2.jpg" class="wish-img" alt="">
+                        <p class="product-title">Test Title</p>
+                    </div>
+                    <div class="wish-detail">
+                        <p class="wish-price">$25</p>
+                        <i class="fa-solid fa-trash wish-remove"></i>
+                    </div>
+                </div> -->
+                <i class="fa-solid fa-xmark" id="close-wish"></i>
+            </div>
+        </div>
+        <!-- end wishlist -->
+
+
+    </header>
+    <div class="landing">
+        <div class="img"></div>
+        <div class="overlay">1</div>
+        <div class="text">
+            <p data-i18n="welcome">Welcome to our <span> furniture</span> site . </p>
+            <p data-i18n="wel"> We have a wide range of quality furniture that will help you create a
+                beautiful and comfortable home.</p>
+        </div>
+    </div>
+
+    <section class="sofa" id="sofa">
+        <h2 data-i18n="safas"  class="main-heading">sofas</h2>
+        <div class="container">
+            <div class="box">
+                <img src="./images/sofa1.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Three-seat sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                        <div class="price">
+                            <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+            </div>
+            <div class="box">
+                <img src="./images/sofa2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Seven seater sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+            </div>
+            <div class="box">
+                <img src="./images/sofa3.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Five seater sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+            </div>
+            <div class="box">
+                <img src="./images/sofa4.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Modern style sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/sofa5.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">decorative sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/sofa6.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Five seater sofa</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/sofa1.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Three-seat sofa1</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/sofa2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Seven seater sofa1</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/sofa3.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="soTitle1" class="product-title">Five seater sofa1</h3>
+                    <p data-i18n="soDetiles1">The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                        your family.</p>
+                    <div class="price">
+                        <h4 data-i18n="soPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+    </section>
+
+    <section class="sofa table" style="margin-top: 100px; padding-bottom: 100px;" id="table">
+        <h2 data-i18n="table" class="main-heading" style="padding-top: 40px;">tables</h2>
+        <div class="container">
+            <div class="box">
+                <img src="./images/table1.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Brown dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Round dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table3.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Wooden dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table4.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Ornate dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table5.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Spacious dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table6.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Modern dining table</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table1.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Brown dining table1</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Round dining table1</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/table3.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="tabTitle1"  class="product-title">Wooden dining table1</h3>
+                    <p data-i18n="tabDetiles1">A dining and study table that can accommodate all members of your family and all weddings.</p>
+                    <div class="price">
+                        <h4 data-i18n="tabPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+
+    </section>
+    <section class="sofa" id="lamps">
+        <h2 data-i18n="lamps" class="main-heading">lamps</h2>
+        <div class="container">
+            <div class="box">
+                <img src="./images/lamp1.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Iron desk lamp</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/lamp2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">white desk lamp</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/lamp3.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Wooden desk lamp</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+
+            <div class="box">
+                <img src="./images/lamp5.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Girl's desk lamp</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/lamp6.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Decorative desk lamp</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+
+            <div class="box">
+                <img src="./images/lamp2.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">white desk lamp1</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+
+            <div class="box">
+                <img src="./images/lamp4.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Modern desk lamp1</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/lamp5.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Girl's desk lamp1</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                            <i class="fa-solid fa-heart wishlist"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+            <div class="box">
+                <img src="./images/lamp6.jpg" class="product-img" width="500px" height="240px" alt="">
+                <div class="content">
+                    <h3 data-i18n="lamTitle1"  class="product-title">Decorative desk lamp1</h3>
+                    <p data-i18n="lamDetiles1">The desk lamp gives the space an elegant and comfortable look and helps in studying.</p>
+                    <div class="price">
+                        <h4 data-i18n="lamPrice1" class="">prices : 180$ <del>220$</del></h4>
+                        <div class="i">
+                            <i class="fa-solid fa-heart wishlist"></i>
+                            <i class="fa-solid fa-cart-shopping add-cart"></i>
+                        </div>
+                    </div>
+                </div>
+                <p data-i18n="learn" class="learn">learn more</p>
+
+            </div>
+
+    </section>
+
+    <footer style="margin-top: 30px;">
+        &copy; 2023 <span>logo</span> All Right Reserved
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

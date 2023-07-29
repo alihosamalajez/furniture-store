@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0
+        ,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="setting">
+        <div class="icon">
+            <i class="fa-sharp fa-solid fa-gear"></i>
+        </div>
+        <div class="setting-container">
+            <div class="box">
+                <h4>Colors :</h4>
+                <ul class="color1">
+                    <li class="active" data-color="#2196f3"><a href=""></a></li>
+                    <li data-color="rgb(255, 145, 0)"><a href=""></a></li>
+                    <li data-color="rgb(0, 196, 163)"><a href=""></a></li>
+                    <li data-color="rgb(204, 1, 255)"><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h4 data-i18n="language">Language :</h4>
+                <ul class="lang">
+                    <li class="ar ">Arabic</li>
+                    <li class="en active">English</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a data-i18n="staor" href="#" class="logo">Store</a>
+            <nav class="lin open">
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul class="main">
+                    <li><a data-i18n="home" class="active" href="index.html">Home</a></li>
+                    <li><a data-i18n="cart" id="carta">cart</a></li>
+                    <li><a data-i18n="wishlist" id="wisha">wishlist</a></li>
+                    <li><a data-i18n="contact" href="./contact.html">Contact</a></li>
+                    <li><a data-i18n="about" href="./about.html">About</a></li>
+                    <li><a data-i18n="login"href="./login.html">login</a></li>
+                </ul>
+            </nav>
+            <a data-i18n="login"href="./login.html" class="log">login</a>
+        </div>
+
+
+        <!-- start cart -->
+        <div class="cart">
+            <h2 data-i18n="addCart" class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <img src="./images/sofa2.jpg" class="cart-img" alt="">
+                    <div class="detail">
+                        <div class="product-title">Test Title</div>
+                        <div class="cart-price">$25</div>
+                    </div>
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div> -->
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+            </div>
+        </div>
+        <!-- end Cart -->
+
+        <!-- start wishlist -->
+        <div class="wish">
+            <h2 data-i18n="addWishlist" class="wish-title">Your Wishlish</h2>
+            <div class="wish-content">
+                <!-- <div class="wish-box">
+                    <img src="./images/sofa2.jpg" class="wish-img" alt="">
+                    <div class="wish-detail">
+                        <div class="product-title">Test Title</div>
+                        <div class="wish-price">$25</div>
+                    </div>
+                    <i class="fa-solid fa-trash wish-remove"></i>
+                </div> -->
+                <i class="fa-solid fa-xmark" id="close-wish"></i>
+            </div>
+        </div>
+        <!-- end wishlist -->
+
+
+    </header>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about-contant">
+                <figure class="image">
+                    <img src="./images/about.jpg" width="300px" alt="">
+                </figure>
+                <div class="text">
+                    <h1 data-i18n="about">About Us</h1>
+                    <h3 data-i18n="furnStore">Furniture<span> store</span></h3>
+                    <p data-i18n="about1">Welcome to our furniture store, where we offer a wide selection of stylish and comfortable
+                        furniture for your home. Our inventory includes sofas, tables, and lamps that are carefully
+                        crafted to meet your unique tastes and needs.
+
+                        Our sofas are available in a variety of sizes, styles, and colors, making it easy for you to
+                        find the perfect fit for your living room. Whether you're looking for a classic leather sofa or
+                        a cozy fabric loveseat, we have a variety of options to choose from.
+
+                        In addition to sofas, we also carry a selection of beautiful and functional tables, including
+                        coffee tables, end tables, and dining tables. Our tables are made from high-quality materials,
+                        such as solid wood and tempered glass, ensuring they will last for years to come.
+                    </p>
+                    <hr>
+                    <p data-i18n="about2">The purpose of a website dedicated to selling furniture is to provide a platform for customers to
+                        purchase various furniture items such as sofas, tables, and lamps. The goal of such a website is
+                        to make the process of buying furniture convenient, efficient, and accessible for customers by
+                        offering a wide range of products, detailed product information, and an easy-to-use online
+                        shopping experience. Additionally, the website may aim to increase brand visibility and drive
+                        sales for the furniture retailer. </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 <span>logo</span> All Right Reserved
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

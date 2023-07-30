@@ -30,29 +30,38 @@
                     <li data-color="rgb(204, 1, 255)"><a href=""></a></li>
                 </ul>
             </div>
+            <div class="box">
+                <h4 data-i18n="language">Language :</h4>
+                <ul class="lang">
+                    <li class="ar ">Arabic</li>
+                    <li class="en active">English</li>
+                </ul>
+            </div>
         </div>
     </div>
     <header>
         <div class="container">
-            <a href="#" class="logo">logo</a>
-            <nav class="lin">
+            <a data-i18n="staor" href="#" class="logo">Store</a>
+            <nav class="lin open">
                 <i class="fas fa-bars toggle-menu"></i>
                 <ul class="main">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a id="carta">cart</a></li>
-                    <li><a id="wisha">wishlist</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./login.html">login</a></li>
-                    
+                    <li><a data-i18n="home" class="active" href="index.html">Home</a></li>
+                    <li><a data-i18n="cart" id="carta">cart</a></li>
+                    <li><a data-i18n="wishlist" id="wisha">wishlist</a></li>
+                    <li><a data-i18n="contact" href="./contact.html">Contact</a></li>
+                    <li><a data-i18n="about" href="./about.html">About</a></li>
+                    <li><a data-i18n="login"href="./login.html">login</a></li>
                 </ul>
             </nav>
+            <a data-i18n="login"href="./login.html" class="log">login</a>
+        </div>
 
-            <!-- start cart -->
-            <div class="cart">
-                <h2 class="cart-title">Your Cart</h2>
-                <div class="cart-content">
-                    <!-- <div class="cart-box">
+
+        <!-- start cart -->
+        <div class="cart">
+            <h2 data-i18n="addCart" class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
                     <img src="./images/sofa2.jpg" class="cart-img" alt="">
                     <div class="detail">
                         <div class="product-title">Test Title</div>
@@ -60,27 +69,31 @@
                     </div>
                     <i class="fa-solid fa-trash cart-remove"></i>
                 </div> -->
-                    <i class="fa-solid fa-xmark" id="close-cart"></i>
-                </div>
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
             </div>
-            <!-- end Cart -->
+        </div>
+        <!-- end Cart -->
 
-            <!-- start wishlist -->
-            <div class="wish">
-                <h2 class="wish-title">Your Wishlish</h2>
-                <div class="wish-content">
-                    <!-- <div class="wish-box">
-                    <img src="./images/sofa2.jpg" class="wish-img" alt="">
-                    <div class="wish-detail">
-                        <div class="product-title">Test Title</div>
-                        <div class="wish-price">$25</div>
+        <!-- start wishlist -->
+        <div class="wish">
+            <h2 data-i18n="addWishlist" class="wish-title">Your Wishlish</h2>
+            <div class="wish-content">
+                <!-- <div class="wish-box">
+                    <div>
+                        <img src="./images/sofa2.jpg" class="wish-img" alt="">
+                        <p class="product-title">Test Title</p>
                     </div>
-                    <i class="fa-solid fa-trash wish-remove"></i>
+                    <div class="wish-detail">
+                        <p class="wish-price">$25</p>
+                        <i class="fa-solid fa-trash wish-remove"></i>
+                    </div>
                 </div> -->
-                    <i class="fa-solid fa-xmark" id="close-wish"></i>
-                </div>
+                <i class="fa-solid fa-xmark" id="close-wish"></i>
             </div>
-            <!-- end wishlist -->
+        </div>
+        <!-- end wishlist -->
+
+
     </header>
     <div class="product-details">
         <div class="container">
@@ -97,17 +110,16 @@
                 </div>
                 <div class="text">
                     <div class="text-details">
-                        <p>Text to name product</p>
-                        <h2>title title title title title title </h2>
-                        <span>99.00 $</span>
+                        <p data-i18n="link">Furniture / product / details</p>
+                        <h2 data-i18n="h2title">Seven seater sofa </h2>
+                        <span data-i18n="spanPrice">prices : 180$ <del>220$</del></span>
                         <div class="img">
                             <img src="./images/lamp5.jpg" alt="">
                             <img class="active" src="./images/lamp2.jpg" alt="">
                         </div>
-                        <p class="p-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, facilis consequuntur! Ea
-                            nostrum tempora similique labore et ducimus voluptates quibusdam quidem eos reiciendis. Esse
-                            quam cum, labore adipisci provident quae.
+                        <p data-i18n="pDetails" class="p-details">
+                            The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of
+                            your family.
                         </p>
                     </div>
                     <div class="counter">
@@ -116,21 +128,21 @@
                             <p>1</p>
                             <p>-</p>
                         </div>
-                        <p class="add">add to cartrt</p>
+                        <p data-i18n="addToCart" class="add">add to cart</p>
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <div class="contact-detalis">
                         <div>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>add to cart</p>
+                            <i class="fa-regular fa-truck-fast"></i>
+                            <p data-i18n="fast">Fast delivery.</p>
                         </div>
                         <div>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>add to cart</p>
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <p data-i18n="returning">The possibility of returning the product for free.</p>
                         </div>
                         <div>
-                            <i class="fa-regular fa-heart"></i>
-                            <p>add to cart</p>
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <p data-i18n="dollar">Providing the option to pay upon receipt.</p>
                         </div>
                     </div>
                 </div>

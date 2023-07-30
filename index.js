@@ -193,7 +193,7 @@ let box = document.querySelectorAll(".sofa .box .learn");
 
 for (let i = 0; i < box.length; i++) {
   box[i].onclick = () => {
-    window.location = "http://127.0.0.1:4814/product-details.html";
+    window.location = "product-details.html";
   };
 }
 
@@ -208,18 +208,15 @@ btnSetting.onclick = () => {
 // change background
 let backgroundImage = document.querySelector(".landing .img");
 let imgsArray = [
-  "./images/sofa1.jpg",
-  "./images/sofa2.jpg",
-  "./images/sofa3.jpg",
-  "./images/sofa4.jpg",
-  "./images/sofa5.jpg",
-  "./images/main1.jpg",
-  "./images/sofa6.jpg",
+  "./images/33.jpg",
+  "./images/back22.jpg",
+  "./images/lamp1.jpg",
+  "./images/lamp2.jpg",
 ];
 setInterval(() => {
   let random = Math.floor(Math.random() * imgsArray.length);
   backgroundImage.style.backgroundImage = `url(${imgsArray[random]})`;
-}, 90000);
+}, 10000);
 
 // change language
 
@@ -273,6 +270,14 @@ const translations = {
     dont: "Don't have an account ? ",
     registerHere: "Register here",
     already: "Already Register ?",
+    link: "Furniture / product / details",
+    h2title: "Seven seater sofa ",
+    spanPrice: "prices : 180$ <del>220$</del>",
+    pDetails: " The sofa gives a beautiful look to the place, in addition to its spaciousness for all members of your family.",
+    addToCart: "add to cart",
+    fast: "Fast delivery .",
+    returning: "The possibility of returning the product for free.",
+    dollar: "Providing the option to pay upon receipt.",
   },
   ar: {
     color: "الالوان",
@@ -323,6 +328,14 @@ const translations = {
     dont: "ليس لديك حساب ؟",
     registerHere: "سجل هنا",
     already: "مسجل بالفعل؟",
+    link: "الأثاث / المنتج / التفاصيل",
+    h2title: "صوفا بسبعة مقاعد ",
+    spanPrice: "الأسعار: 180 $ <del> 220 $ </del>",
+    pDetails: "الكنبة تضفي مظهرًا جميلًا على المكان ، بالإضافة إلى اتساعها لجميع أفراد عائلتك. ",
+    addToCart: "أضف إلى السلة",
+    fast: "توصيل سريع .",
+    returning: "امكانية ارجاع المنتج مجانا.",
+    dollar: "توفير خيار الدفع عند الاستلام.",
   },
 };
 
